@@ -1,0 +1,99 @@
+.projects-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    height: 80vh;
+    padding: 1rem 0.7rem;
+}
+.card-container{
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+.project-description{
+    color: transparent;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-container:hover .project-description{
+    color: white;
+    height: 60%;
+    background: rgba(128, 105, 2, 0.62);
+    backdrop-filter: blur(12px);
+
+}
+ .card1{
+    background: url('../assets/ecommerce-website-design.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-row: span 2;
+}
+.card2{
+    background: url('../assets/Quize\ test.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+} .card3{
+    background: url('../assets/lodging\ app.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+} .card4{
+    background: url('../assets/todo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card5{
+    background: url('../assets/others.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project-header{
+    color: var(--golden-orange);
+    font-size: 2.3rem;
+    text-align: center;
+}
+@media screen and (max-width: 850px){
+    .projects-gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        height: 90vh;
+        padding: 1rem 0.7rem;
+    }
+    .card1{
+        grid-row: span 1;
+    }
+    .card-container{
+        height: 50vh;
+        position: relative;
+    }
+}
+@media screen and (max-width: 650px){
+    .projects-gallery{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        height: 90vh;
+        padding: 1rem 1.1rem;
+    }
+    .card1{
+        grid-row: span 1;
+    }
+    .card-container{
+        height: 60vh;
+        position: relative;
+    }
+}

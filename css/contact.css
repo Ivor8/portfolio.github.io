@@ -1,0 +1,135 @@
+#contact-section{
+    height: 80vh;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.8rem;
+    margin-top: 1rem;
+}
+.project-header{
+    color: var(--golden-orange);
+    font-size: 2.3rem;
+    text-align: center;
+}
+.left-contact{
+    height: 100%;
+    padding: 2rem ;
+    flex-basis: 50%;
+
+}
+.top-left{
+    display: flex;
+    align-items: center;
+}
+.top-left img{
+    height: 7rem;
+}
+.top-left h2{
+    font-size: 2.6rem;
+    color: white;
+}
+.top-left span{
+    color: var(--golden-brown);
+    font-size: 2.6rem;
+}
+.left-contact{
+    p{
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+    .contact-links{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .contact-links img{
+        height: 3rem;
+        padding: 0.5rem 0.5rem;
+    }
+}
+form{
+    background-color: rgba(0, 0, 0, 0.464);
+    backdrop-filter: blur(12px);
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1.6rem 0.6rem;
+}
+form button{
+    height: 3rem;
+    border: none;
+    border-radius: 6rem;
+    margin: 0.8rem 0;
+    width: 10rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: white;
+    font-weight: 600;
+    background-color: var(--golden-brown);
+}
+input{
+    background-color: var(--gray-color);
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 15rem;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-bottom: 2px solid var(--golden-brown);
+    outline: none;
+    margin: 0.8rem 0;
+}
+textarea{
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    height: 4rem;
+    width: 15rem;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-bottom: 2px solid var(--golden-brown);
+    border-left: 2px solid var(--golden-brown);
+    outline: none;
+    margin: 1rem 0;
+}
+@media screen and (max-width: 850px){
+    .contact-container{
+        flex-direction: column;
+    }
+    form{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 650px){
+    form{
+        width: 95%;
+    }
+    input,textarea{
+        width: 90%;
+    }
+
+    .left-contact{
+        p{
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+        .contact-links{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .contact-links img{
+            height: 3rem;
+            padding: 0.5rem 0.5rem;
+        }
+    }
+    
+    
+}
