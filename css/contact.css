@@ -44,8 +44,11 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .contact-links img{
-        height: 3rem;
+    .contact-links a{
+        font-size: 1.2rem;
+        color: var(--golden-orange);
+        border-bottom: 2px solid var(--golden-orange);
+        margin-left: 0.4rem;
         padding: 0.5rem 0.5rem;
     }
 }
@@ -122,11 +125,15 @@ textarea{
         }
         .contact-links{
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .contact-links img{
-            height: 3rem;
+            font-size: 1.2rem;
+            color: var(--golden-orange);
+            border-bottom: 2px solid var(--golden-orange);
+            margin-bottom: 0.4rem;
             padding: 0.5rem 0.5rem;
         }
     }
