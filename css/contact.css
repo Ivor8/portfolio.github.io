@@ -39,12 +39,12 @@
         font-weight: 400;
         font-size: 1.3rem;
     }
-    .contact-links{
+    .section-contactLinks{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .contact-links a{
+    .section-contactLinks a{
         font-size: 1.2rem;
         color: var(--golden-orange);
         border-bottom: 2px solid var(--golden-orange);
@@ -123,13 +123,13 @@ textarea{
             font-weight: 400;
             font-size: 1.3rem;
         }
-        .contact-links{
+        .section-contactLinks{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .contact-links img{
+        .section-contactLinks img{
             font-size: 1.2rem;
             color: var(--golden-orange);
             border-bottom: 2px solid var(--golden-orange);

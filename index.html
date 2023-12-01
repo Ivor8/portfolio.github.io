@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <script src="javascript/togglenav.js"></script>
     <script src="javascript/alert.js"></script>
+    <script src="javascript/togglenav.js"></script>
     <title>Ivor-Dev8</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             <li onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34" fill="white" class="showtoggle"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
         </ul>
 
-        <ul class="togglemenu">
+        <ul class="togglemenu" onclick="closeMenu()">
             <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34" fill="white" class="hidetoggle"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
             <li><a href="/">Home</a></li>
             <li><a href="#skills">About</a></li>
@@ -45,7 +46,7 @@
         <span class='hello'>Hello</span>
         <span class='introText'>I'm <span class="introName">Ivor-Dev</span><br />A Software Engineer</span>
        <div class="introPara">I am a Pationate and skilled software engineer with mastery in many<br/> mordern develeopment technologies</div>
-        <a href="/"><button class='projectsBtn'>
+        <a href="projects.html"><button class='projectsBtn'>
             Projects
             </button></a>
     </div>
@@ -116,7 +117,7 @@
                 Hello there! you can contact me on the following social media platforms
             or visit my Github page to view all my projects
             </p>
-            <div class="contact-links">
+            <div class="section-contactLinks">
                 <a href="https://github.com/Ivor8">Github</a>
                 <a href="https://www.linkedin.com/in/ivor-dev8-308714292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
                 <a href="https://www.facebook.com/profile.php?id=100063812319970&mibextid=ZbWKwL">Facebook</a>
